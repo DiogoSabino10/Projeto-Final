@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2? famaly=Poppins:wght@400;500;600;700&display=swap?');
 
 *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppind', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: #dae4ff;
     
 }
