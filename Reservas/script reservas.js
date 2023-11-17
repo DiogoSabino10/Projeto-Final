@@ -1,37 +1,37 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+document.addEventListener("DOMContentLoaded", function () {
+  var calendarEl = document.getElementById("calendar");
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        selectable: true, // Permitir seleção de datas
-        select: function(info) {
-            // Quando uma data é selecionada, exibe o formulário de reserva
-            exibirFormularioDeReserva(info);
-        },
-        events: [
-            {
-                title: 'Disponível',
-                start: '2023-11-15',
-                end: '2023-1-16',
-                className: 'fc-event-available'
-            },
-            {
-                title: 'Disponível',
-                start: '2023-10-22',
-                end: '2023-10-23',
-                className: 'fc-event-available'
-            },
-            // Adicione mais eventos para outros dias disponíveis
-        ],
-    });
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: "dayGridMonth",
+    selectable: true, // Permitir seleção de datas
+    select: function (info) {
+      // Quando uma data é selecionada, exibe o formulário de reserva
+      exibirFormularioDeReserva(info);
+    },
+    events: [
+      {
+        title: "Disponível",
+        start: "2023-11-15",
+        end: "2023-1-16",
+        className: "fc-event-available",
+      },
+      {
+        title: "Disponível",
+        start: "2023-10-22",
+        end: "2023-10-23",
+        className: "fc-event-available",
+      },
+      // Adicione mais eventos para outros dias disponíveis
+    ],
+  });
 
-    calendar.render();
+  calendar.render();
 
-    function exibirFormularioDeReserva(info) {
-        // Exibe um formulário simples para fazer uma reserva
-        var selectedDate = info.startStr;
-        var formulario = document.createElement('div');
-        formulario.innerHTML = `
+  function exibirFormularioDeReserva(info) {
+    // Exibe um formulário simples para fazer uma reserva
+    var selectedDate = info.startStr;
+    var formulario = document.createElement("div");
+    formulario.innerHTML = `
             <h2>Reserve a Data</h2>
             <p>Selecione a data: ${selectedDate}</p>
             <form>
@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
             </form>
         `;
 
-        // Substitua o conteúdo da seção de reservas pelo formulário
-        var secaoReservas = document.getElementById('reservas');
-        secaoReservas.innerHTML = '';
-        secaoReservas.appendChild(formulario);
-    }
+    // Substitua o conteúdo da seção de reservas pelo formulário
+    var secaoReservas = document.getElementById("reservas");
+    secaoReservas.innerHTML = "";
+    secaoReservas.appendChild(formulario);
+  }
 });

@@ -146,72 +146,69 @@ a:hover {
   transform: none;
 }
 
-
-
 /* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
 header {
-    text-align: center;
-    background-color: #ffffff;
-    color: #ffffff;
-    padding: 40px 0;
+  text-align: center;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 40px 0;
 }
 
 header h1 {
-    font-size: 36px;
-    margin: 0;
-    color: #000000;
+  font-size: 36px;
+  margin: 0;
+  color: #000000;
 }
 
 header p {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #000000;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000000;
 }
-
 
 /* Estilos para seções */
 section {
-    padding: 40px;
+  padding: 40px;
 }
 
 h2 {
-    font-size: 24px;
-    margin: 0;
+  font-size: 24px;
+  margin: 0;
 }
 
 /* Estilos para botões */
 .botao {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin: 10px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
 /* Estilos para acomodações */
 .acomodacao {
-    border: 1px solid #fefefe;
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #ffffff;
+  border: 1px solid #fefefe;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #ffffff;
 }
 
 .acomodacao img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .acomodacao h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Estilos para imagens de acomodações */
@@ -219,20 +216,20 @@ h2 {
 
 /* Estilos para o calendário */
 #calendar {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
 }
 
 /* Estilos para as datas disponíveis no calendário */
 .fc-event-available {
-    background-color: #2d9d31;
-    color: #fff;
+  background-color: #2d9d31;
+  color: #fff;
 }
 
 /* Estilos para a seção de contato */
 #contato p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 /* Estilos de cores personalizadas */
