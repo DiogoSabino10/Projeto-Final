@@ -2,7 +2,6 @@
 
 Semana 1
 
-fiz o front end 
+fiz o front end
 
 Semana 2
-
