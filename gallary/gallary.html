@@ -1,66 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/gallary/gallery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/gallary/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index/index.html">Coruja House</a></div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="/gallary/gallary.html">Gallery</a></li>
+          <li><a href="/Reservas/Reservas.html">Reservas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Coruja House</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
-        <div id="slide">
-            <div class="item" style="background-image: url(/assets/cosinha1.jpeg);">
-                <div class="content">
-                    <div class="name">Cozinha</div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
-                    <button>See more</button>
-                </div>
+      <div id="slide">
+        <div class="item" style="background-image: url(/assets/cosinha1.jpeg)">
+          <div class="content">
+            <div class="name">Cozinha</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
             </div>
-            <div class="item" style="background-image: url(/assets/entrada_casa.jpeg);">
-                <div class="content">
-                    <div class="name">Sala</div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(/assets/casa_banho1.jpeg);">
-                <div class="content">
-                    <div class="name">Casa de Banho</div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(/assets/Quarto1.jpeg);">
-                <div class="content">
-                    <div class="name">Quarto</div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(/assets/terraço.jpeg);">
-                <div class="content">
-                    <div class="name">terraço</div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
-                    <button>See more</button>
-                </div>
-            </div>
-            <div class="item" style="background-image: url(/assets/brindes.jpeg);">
-                <div class="content">
-                    <div class="name">Brindes</div>
-                    <div class="des">Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu</div>
-                    <button>See more</button>
-                </div>
-            </div>
+            <button>See more</button>
+          </div>
         </div>
-        <div class="buttons">
-            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
-            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        <div
+          class="item"
+          style="background-image: url(/assets/entrada_casa.jpeg)"
+        >
+          <div class="content">
+            <div class="name">Sala</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            </div>
+            <button>See more</button>
+          </div>
         </div>
+        <div
+          class="item"
+          style="background-image: url(/assets/casa_banho1.jpeg)"
+        >
+          <div class="content">
+            <div class="name">Casa de Banho</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            </div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(/assets/Quarto1.jpeg)">
+          <div class="content">
+            <div class="name">Quarto</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            </div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(/assets/terraço.jpeg)">
+          <div class="content">
+            <div class="name">terraço</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            </div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(/assets/brindes.jpeg)">
+          <div class="content">
+            <div class="name">Brindes</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            </div>
+            <button>See more</button>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
     </div>
+    <footer>
+        
+        <p>Copyright &#169; 2023 Diogo Sabino. All Rights Reserved.</p>
+      </footer>
 
     <script src="/gallary/gallery.js"></script>
-</body>
+  </body>
 </html>
-  
