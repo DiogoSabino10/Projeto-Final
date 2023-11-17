@@ -37,6 +37,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  background-color: none; /* Cor de fundo da barra de navegação */
+  border-bottom: none; /* Borda inferior da barra de navegação */
 }
 
 .nav-links {
@@ -46,24 +48,22 @@ nav {
 }
 
 a {
-  color: black;
+  color: #000000; /* Cor dos links não visitados */
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
-  color: grey;
+  color: #555555; /* Cor ao passar o mouse sobre os links */
   text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
   font-size: 2rem;
+  color: #000000; /* Cor do texto do logo */
 }
 
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
 }
 
 /* HAMBURGER MENU */
@@ -89,19 +89,19 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
-  transition: all 0.3 ease-in-out;
+  background-color: #000000; /* Cor das linhas do ícone do menu */
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: #ffffff; /* Cor de fundo do menu */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links a {
@@ -109,9 +109,9 @@ a:hover {
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
-  color: black;
+  color: #000000; /* Cor dos links no menu */
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-links li {
@@ -148,29 +148,27 @@ a:hover {
 
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Cor de fundo geral */
+  color: #000000; /* Cor do texto principal */
 }
 
 header {
   text-align: center;
   background-color: #ffffff;
-  color: #ffffff;
+  color: #000000;
   padding: 40px 0;
 }
 
 header h1 {
   font-size: 36px;
   margin: 0;
-  color: #000000;
 }
 
 header p {
   font-size: 18px;
   margin: 10px 0;
-  color: #000000;
 }
 
 /* Estilos para seções */
@@ -223,14 +221,23 @@ h2 {
 
 /* Estilos para as datas disponíveis no calendário */
 .fc-event-available {
-  background-color: #2d9d31;
+  background-color: #4caf50;
   color: #fff;
 }
 
 /* Estilos para a seção de contato */
 #contato p {
   font-size: 16px;
+  color: #333; /* Cor do texto na seção de contato */
 }
 
-/* Estilos de cores personalizadas */
-/* Personalize as cores de acordo com a identidade visual da "Coruja House" */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: none; /* Cor de fundo do footer */
+  color: #000000; /* Cor do texto no footer */
+}
+
+footer p {
+  margin: 0;
+}
