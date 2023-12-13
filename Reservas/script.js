@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
         end: "2023-10-23",
         className: "fc-event-available",
       },
+      
+      {
+        title: "Disponível",
+        start: "2023-12-22",
+        end: "2023-12-23",
+        className: "fc-event-available",
+      },
       // Adicione mais eventos para outros dias disponíveis
     ],
   });
