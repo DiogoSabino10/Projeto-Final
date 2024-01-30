@@ -1,10 +1,11 @@
-// script.js
-function login() {
-  // Implementar lógica de login aqui
-  alert("Lógica de login será implementada aqui.");
-}
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-function signup() {
-  // Implementar lógica de criação de conta aqui
-  alert("Lógica de criação de conta será implementada aqui.");
-}
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
