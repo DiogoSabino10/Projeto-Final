@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coruja House</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index/index.html">Coruja House</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="/gallary/gallary.html">Gallery</a></li>
+          <li><a href="/Reservas/Reservas.html">Reservas</a></li>
+          <li><a href="/login/login.html">login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Coruja House</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="/gallary/gallary.html" onclick="toggleMenu()">Gallery</a>
+          </li>
+          <li>
+            <a href="/Reservas/Reservas.html" onclick="toggleMenu()"
+              >Reservas</a
+            >
+          </li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Reservas</h1>
+      <p>Olá a todos </p>
+    </header>
+
+    <section id="reservas">
+      <h2>Faça Sua Reserva</h2>
+      <p>
+        Verifique a disponibilidade e faça sua reserva no calendário abaixo:
+      </p>
+      <div id="calendar"></div>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>
+        Entre em contato conosco para obter mais informações ou fazer uma
+        reserva.
+      </p>
+      <p>Email: sabinodiogo10@gmail.com</p>
+      <p>Telefone: 914338390</p>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2023 Diogo Sabino. All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="/Reservas/script.js"></script>
+  </body>
+</html>

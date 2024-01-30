@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/gallary/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="/index/index.html">Coruja House</a></div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="/gallary/gallary.html">Gallery</a></li>
+          <li><a href="/Reservas/Reservas.html">Reservas</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Coruja House</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="slide">
+        <div
+          class="item"
+          style="background-image: url(/assets/cozinha-google.jpeg)"
+        >
+          <div class="content">
+            <div class="name">Cozinha</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            </div>
+            <button onclick="abrirImagemcozinha()">See More</button>
+            <script>
+              function abrirImagemcozinha() {
+                // URL da imagem que você deseja exibir
+                var imageUrl = "/assets/cozinha-google.jpeg";
+
+                // Abrir a imagem em uma nova janela ou guia
+                window.open(imageUrl, "/assets/cozinha-google.jpeg");
+              }
+            </script>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(/assets/sala-google.png)"
+        >
+          <div class="content">
+            <div class="name">Sala</div>
+            <div class="des">sala para descansar</div>
+            <button onclick="abrirImagemsala()">See More</button>
+            <script>
+              function abrirImagemsala() {
+                // URL da imagem que você deseja exibir
+                var imageUrl = "/assets/sala-google.png";
+
+                // Abrir a imagem em uma nova janela ou guia
+                window.open(imageUrl, "_blank");
+              }
+            </script>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(/assets/banho-google.png)"
+        >
+          <div class="content">
+            <div class="name">Casa de Banho</div>
+            <div class="des">
+              Tinh ru anh di chay pho, chua kip chay pho thi anhchay mat tieu
+            </div>
+            <button onclick="abrirImagembanho()">See More</button>
+            <script>
+              function abrirImagembanho() {
+                // URL da imagem que você deseja exibir
+                var imageUrl = "/assets/banho-google.png";
+
+                // Abrir a imagem em uma nova janela ou guia
+                window.open(imageUrl, "_blank");
+              }
+            </script>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(/assets/quarto1-google.png)"
+        >
+          <div class="content">
+            <div class="name">Quarto de Casal</div>
+            <div class="des">.</div>
+            <button onclick="abrirImagemquarto1()">See More</button>
+            <script>
+              function abrirImagemquarto1() {
+                // URL da imagem que você deseja exibir
+                var imageUrl = "/assets/quarto1-google.png";
+
+                // Abrir a imagem em uma nova janela ou guia
+                window.open(imageUrl, "/assets/jardim-google.png");
+              }
+            </script>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(/assets/jardim-google.png)"
+        >
+          <div class="content">
+            <div class="name">Jardim</div>
+            <div class="des">dar um mergulho</div>
+            <button onclick="abrirImagemjardim()">See More</button>
+            <script>
+              function abrirImagemjardim() {
+                // URL da imagem que você deseja exibir
+                var imageUrl = "/assets/jardim-google.png";
+
+                // Abrir a imagem em uma nova janela ou guia
+                window.open(imageUrl, "/assets/jardim-google.png");
+              }
+            </script>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(/assets/quarto2-google.png)"
+        >
+          <div class="content">
+            <div class="name">Quarto</div>
+            <div class="des"></div>
+            <button onclick="abrirImagemquarto2()">See More</button>
+            <script>
+              function abrirImagemquarto2() {
+                // URL da imagem que você deseja exibir
+                var imageUrl = "/assets/quarto2-google.png";
+
+                // Abrir a imagem em uma nova janela ou guia
+                window.open(imageUrl, "/assets/quarto2-google.png");
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+    <footer>
+    </footer>
+    
+    <script src="/gallary/gallery.js"></script>
+  </body>
+</html>

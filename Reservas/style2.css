@@ -1,0 +1,243 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  background-color: none; /* Cor de fundo da barra de navegação */
+  border-bottom: none; /* Borda inferior da barra de navegação */
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #000000; /* Cor dos links não visitados */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #555555; /* Cor ao passar o mouse sobre os links */
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #000000; /* Cor do texto do logo */
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #000000; /* Cor das linhas do ícone do menu */
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff; /* Cor de fundo do menu */
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000; /* Cor dos links no menu */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Cor de fundo geral */
+  color: #000000; /* Cor do texto principal */
+}
+
+header {
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Estilos para seções */
+section {
+  padding: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Estilos para botões */
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Estilos para acomodações */
+.acomodacao {
+  border: 1px solid #fefefe;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #ffffff;
+}
+
+.acomodacao img {
+  max-width: 100%;
+}
+
+.acomodacao h3 {
+  font-size: 20px;
+}
+
+/* Estilos para imagens de acomodações */
+/* Personalize conforme necessário */
+
+/* Estilos para o calendário */
+#calendar {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+/* Estilos para as datas disponíveis no calendário */
+.fc-event-available {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Estilos para a seção de contato */
+#contato p {
+  font-size: 16px;
+  color: #333; /* Cor do texto na seção de contato */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: none; /* Cor de fundo do footer */
+  color: #000000; /* Cor do texto no footer */
+}
+
+footer p {
+  margin: 0;
+}
