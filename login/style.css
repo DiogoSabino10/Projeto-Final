@@ -7,12 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: rgb(31, 210, 174);
+    width: 100%;
+    height: 100vh;
+    background: url(/assets/logo\ circular.jpeg)no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .login-box {
@@ -115,6 +118,22 @@ button {
     font-size: 1em;
     color: #000000;
     font-weight: 500;
+}
 
+.register-link {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:houver{
+    text-decoration: underline;
 
 }
