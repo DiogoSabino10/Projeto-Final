@@ -1,139 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: url(/assets/logo\ circular.jpeg)no-repeat;
-    background-size: cover;
-    background-position: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/logo_no_wallpaper.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.login-box {
-    position: relative;
-    width: 400px;
-    height: 450px;
-    background: #ac5454;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+  width: 400px;
+  padding: 2rem 1rem;
+  margin: 50px auto;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.399);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 238, 230, 0.431);
+  backdrop-filter: blur(100px);
 }
 
-h2 {
-    font-size: 2em;
-    color: #ffff;
-    text-align: center;
+h1 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.2rem;
 }
 
-.input-box {
-    position: relative;
-    width: 310px;
-    margin: 30px 0;
-    border-bottom: 2px solid #fff;
+form input {
+  width: 100%;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background: transparent;
+  color: #ffffff;
 }
 
-.input-box label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1em;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.input-box input:focus~label,
-.input-box input:focus~label {
-    top: -5px;
-}
-
-.input-box input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-}
-
-.input-box input {
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #fff;
-    padding: 0 35px 0 5px;
-}
-
-.input-box .icon {
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 57px;
-}
-
-.remember-forget {
-    margin: -15px 0 15px;
-    font-size: .9em;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-
-.rebember-forget label input {
-    margin-right: 3px;
-}
-
-.rebember-forget a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.rebember-forget a:houver {
-    text-decoration:  underline;
+form input::placeholder {
+  color: #ffffff;
 }
 
 button {
-    width: 100%;
-    height: 40px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #000000;
-    font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1.8rem;
+  padding: 10px 0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #000000;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
 }
 
-.register-link {
-    font-size: .9em;
-    color: #fff;
-    text-align: center;
-    margin: 25px 0 10px;
+button:hover {
+  background: rgb(17, 107, 143, 0.877);
 }
 
-.register-link p a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+
+.terms {
+  margin-top: 0.2rem;
 }
 
-.register-link p a:houver{
-    text-decoration: underline;
+.terms input {
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+}
 
+.terms label {
+  font-size: 0.7rem;
+}
+
+.terms a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.member {
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+  color: #ffffff;
+}
+
+.member a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
